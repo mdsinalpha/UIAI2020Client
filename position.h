@@ -1,10 +1,8 @@
 #ifndef POSITION_H
 #define POSITION_H
+#include <bits/stdc++.h>
+using namespace std;
 
-class Position{
-public:
-    int column, step;
-    Position(int column, int step);
-};
+typedef pair<int, int> Position;
 
 #endif // POSITION_H
