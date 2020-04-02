@@ -2,7 +2,7 @@
 #define CELL_H
 #include <position.h>
 #include <character.h>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 class Cell{

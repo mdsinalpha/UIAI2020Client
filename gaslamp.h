@@ -3,9 +3,10 @@
 #include <tile.h>
 
 class GasLamp : public Tile{
+private:
+    GasLamp();
 public:
     const static GasLamp instance;
-    GasLamp();
 };
 
 #endif // GASLAMP_H

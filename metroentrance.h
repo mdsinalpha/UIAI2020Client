@@ -3,9 +3,10 @@
 #include <tile.h>
 
 class MetroEntrance : public Tile{
+private:
+    MetroEntrance();
 public:
     const static MetroEntrance instance;
-    MetroEntrance();
 };
 
 #endif // METROENTRANCE_H

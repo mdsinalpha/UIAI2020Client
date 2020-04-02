@@ -3,9 +3,10 @@
 #include <tile.h>
 
 class Park : public Tile{
+private: 
+    Park();
 public:
     const static Park instance;
-    Park();
 };
 
 #endif // PARK_H
