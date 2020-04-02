@@ -9,14 +9,16 @@
 class StreetSpace : public Cell{
 private:
     StreetSpace(Position position, std::vector<Position> adjacents);
-    StreetSpace(Position position, std::vector<Position> adjacents, Tile* tile);
-    StreetSpace(Position position, std::vector<Position> adjacents, Tile* tile, bool strictTile);
+    StreetSpace(Position position, std::vector<Position> adjacents, Tile tile);
+    StreetSpace(Position position, std::vector<Position> adjacents, Tile tile, bool strictTile);
     StreetSpace(Position position, std::vector<Position> adjacents, Character* character);
 public:
-    Tile* tile;
+    Tile tile;
     bool strictTile;
     static std::map<Position, StreetSpace*> instances;
-    static void init();
+    static void init(){
+        
+    }
 };
 
 #endif // STREETSPACE_H

@@ -4,6 +4,3 @@ QuaysideSpace::QuaysideSpace(Position position, std::vector<Position> adjacents)
     
 }
 
-void QuaysideSpace::init(){
-    // TODO
-}

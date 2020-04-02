@@ -1,6 +1,8 @@
-#include "board.h"
-#define p make_pair
+#include <board.h>
 
-Board::Board(){
-    // TODO
-}
+std::map<Position, Cell*> Board::board;
+std::map<Position, Tile> Board::tiles; 
+std::vector<StreetSpace*> Board::buildingSites;
+std::vector<StreetSpace*> Board::metroEntrances;
+std::vector<StreetSpace*> Board::gasLamps;
+std::vector<StreetSpace*> Board::parks;

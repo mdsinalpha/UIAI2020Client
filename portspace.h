@@ -10,7 +10,9 @@ private:
 public:
     bool hasSteamer;
     static std::map<Position, PortSpace*> instances;
-    static void init();
+    static void init(){
+        
+    }
 };
 
 #endif // PORTSPACE_H

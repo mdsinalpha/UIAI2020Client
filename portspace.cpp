@@ -7,7 +7,3 @@ PortSpace::PortSpace(Position position) : Cell(position){
 PortSpace::PortSpace(Position position, bool hasSteamer) : Cell(position){
     this->hasSteamer = hasSteamer;
 }
-
-void PortSpace::init(){
-    // TODO
-}

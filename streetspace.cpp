@@ -4,12 +4,12 @@ StreetSpace::StreetSpace(Position position, std::vector<Position> adjacents) : C
     this->strictTile = false;
 }
 
-StreetSpace::StreetSpace(Position position, std::vector<Position> adjacents, Tile* tile) : Cell(position, adjacents){
+StreetSpace::StreetSpace(Position position, std::vector<Position> adjacents, Tile tile) : Cell(position, adjacents){
     this->tile = tile;
     this->strictTile = false;
 }
 
-StreetSpace::StreetSpace(Position position, std::vector<Position> adjacents, Tile* tile, bool strictTile) : Cell(position, adjacents){
+StreetSpace::StreetSpace(Position position, std::vector<Position> adjacents, Tile tile, bool strictTile) : Cell(position, adjacents){
     this->tile = tile;
     this->strictTile = strictTile;
 }
@@ -18,6 +18,4 @@ StreetSpace::StreetSpace(Position position, std::vector<Position> adjacents, Cha
     this->strictTile = false;
 }
 
-void StreetSpace::init(){
-    // TODO
-}
+std::map<Position, StreetSpace*> StreetSpace::instances;

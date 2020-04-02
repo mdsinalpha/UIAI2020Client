@@ -4,13 +4,15 @@
 class Cell;
 
 class Character{
-private:
-    Character(Cell* cell, bool isVisible);
 protected:
+    Character(Cell* cell, bool visible);
     Cell* cell;
-    bool isVisible;
-    bool isSuspect;
+    bool visible;
+    bool suspect;
 public:
+    Cell* getCell();
+    bool isVisible();
+    bool isSuspect();
     void moveTo(Cell* cell);
     void toggleVisibility();
     void exonerate();

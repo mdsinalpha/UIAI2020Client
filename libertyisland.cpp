@@ -8,6 +8,6 @@ std::vector<Position> adjacents(){
     return adjacents;
 }
 
-LibertyIsland::LibertyIsland() : Cell(p(0, 0), adjacents){
+LibertyIsland::LibertyIsland() : Cell(p(1, 2), adjacents){
     
 }

@@ -1,9 +1,21 @@
 #include "character.h"
 
-Character::Character(Cell* cell, bool isVisible){
+Character::Character(Cell* cell, bool visible){
     this->cell = cell;
-    this->isVisible = isVisible;
-    this->isSuspect = true;
+    this->visible = visible;
+    this->suspect = true;
+}
+
+Cell* Character::getCell(){
+    return this->cell;
+}
+
+bool Character::isVisible(){
+    return this->visible;
+}
+
+bool Character::isSuspect(){
+    return this->suspect;
 }
 
 void Character::moveTo(Cell* cell){
@@ -11,9 +23,9 @@ void Character::moveTo(Cell* cell){
 }
 
 void Character::toggleVisibility(){
-    this->isVisible = !this->isVisible;
+    this->visible = !this->visible;
 }
 
 void Character::exonerate(){
-    this->isSuspect = false;
+    this->suspect = false;
 }

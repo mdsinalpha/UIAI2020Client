@@ -11,13 +11,15 @@ class Board{
 private:
     Board();
 public:
-    static Board instance;
-    std::map<Position, Cell*> board;
-    std::map<Position, Tile> tiles; 
-    std::vector<StreetSpace*> buildingSites;
-    std::vector<StreetSpace*> metroEntrances;
-    std::vector<StreetSpace*> gasLamps;
-    std::vector<StreetSpace*> parks;
+    static std::map<Position, Cell*> board;
+    static std::map<Position, Tile> tiles; 
+    static std::vector<StreetSpace*> buildingSites;
+    static std::vector<StreetSpace*> metroEntrances;
+    static std::vector<StreetSpace*> gasLamps;
+    static std::vector<StreetSpace*> parks;
+    static void init(){
+        
+    }
 };
 
 #endif // BOARD_H

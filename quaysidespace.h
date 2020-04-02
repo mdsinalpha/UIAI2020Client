@@ -8,7 +8,9 @@ private:
     QuaysideSpace(Position position, std::vector<Position> adjacents);
 public:
     static std::map<Position, QuaysideSpace*> instances;
-    static void init();
+    static void init(){
+        
+    }
 };
 
 #endif // QUAYSIDESPACE_H
