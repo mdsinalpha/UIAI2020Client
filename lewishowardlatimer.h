@@ -13,6 +13,7 @@ public:
             return LewisHowardLatimer::instance;
         return LewisHowardLatimer::instance = new LewisHowardLatimer();
     }
+
     void installGasLamp(StreetSpace* cell);
 };
 

@@ -4,9 +4,12 @@
 #include <streetspace.h>
 #include <quaysidespace.h>
 #include <portspace.h>
+#include <libertyisland.h>
+#include <landexit.h>
 #include <map>
 #include <vector>
 #include <tile.h>
+#include <investigationtile.h>
 
 class Board{
 private:
@@ -18,6 +21,18 @@ public:
     static std::vector<StreetSpace*> gasLamps;
     static std::vector<StreetSpace*> parks;
     static void init(){
+        StreetSpace::init();
+        QuaysideSpace::init();
+        PortSpace::init();
+//        for(std::pair<Position, StreetSpace*> it : StreetSpace::instances)
+//            Board::map[it.first] = it.second;
+//        for(std::pair<Position, QuaysideSpace*> it : QuaysideSpace::instances)
+//            Board::map[it.first] = it.second;
+//        for(std::pair<Position, PortSpace*> it : PortSpace::instances)
+//            Board::map[it.first] = it.second;
+        Board::map[LibertyIsland::instance.position] = &LibertyIsland::instance;
+        Board::map[LandExit::instance.position] = &LandExit::instance;
+        InvestigationTile::init();
         
     }
     static std::map<Position, Tile> tiles(){
