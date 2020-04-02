@@ -13,7 +13,6 @@ public:
             return MrsEmmaGrant::instance;
         return MrsEmmaGrant::instance = new MrsEmmaGrant();
     }
-
     void createPark(StreetSpace* cell);
 };
 

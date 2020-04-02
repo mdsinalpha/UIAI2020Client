@@ -13,7 +13,6 @@ public:
             return CloudRider::instance;
         return CloudRider::instance = new CloudRider();
     }
-
     void constructBuildingSite(StreetSpace* cell);
 };
 
