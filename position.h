@@ -1,8 +1,7 @@
 #ifndef POSITION_H
 #define POSITION_H
-#include <bits/stdc++.h>
-using namespace std;
+#include <utility>
 
-typedef pair<int, int> Position;
+typedef std::pair<int, int> Position;
 
 #endif // POSITION_H

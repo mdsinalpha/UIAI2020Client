@@ -4,21 +4,20 @@
 #include <streetspace.h>
 #include <quaysidespace.h>
 #include <portspace.h>
-#include <bits/stdc++.h>
-using namespace std;
+#include <map>
+#include <vector>
 
 class Board{
 private:
     Board();
 public:
     static Board instance;
-    map<Position, Cell*> board;
-    map<Position, Tile> tiles;
-    vector<StreetSpace*> buildingSites;
-    vector<StreetSpace*> metroEntrances;
-    vector<StreetSpace*> gasLamps;
-    vector<StreetSpace*> parks;
-    
+    std::map<Position, Cell*> board;
+    std::map<Position, Tile> tiles; 
+    std::vector<StreetSpace*> buildingSites;
+    std::vector<StreetSpace*> metroEntrances;
+    std::vector<StreetSpace*> gasLamps;
+    std::vector<StreetSpace*> parks;
 };
 
 #endif // BOARD_H

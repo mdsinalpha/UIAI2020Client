@@ -1,8 +1,8 @@
 #include "libertyisland.h"
-#define p make_pair
+#define p std::make_pair
 
-vector<Position> adjacents(){
-    vector<Position> adjacents;
+std::vector<Position> adjacents(){
+    std::vector<Position> adjacents;
     adjacents.push_back(p(7, 2));
     adjacents.push_back(p(5, 16));
     return adjacents;

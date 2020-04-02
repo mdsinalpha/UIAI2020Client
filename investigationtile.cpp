@@ -1,7 +1,7 @@
 #include "investigationtile.h"
 #define p make_pair
 
-InvestigationTile::InvestigationTile(pair<StreetSpace*, StreetSpace*> blockedCells){
+InvestigationTile::InvestigationTile(std::pair<StreetSpace*, StreetSpace*> blockedCells){
     this->blockedCells = blockedCells;
 }
 

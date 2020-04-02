@@ -2,17 +2,17 @@
 #define CELL_H
 #include <position.h>
 #include <character.h>
-#include <bits/stdc++.h>
-using namespace std;
+class Character;
+#include <vector>
 
 class Cell{
 public:
     Position position;
-    vector<Position> adjacents;
+    std::vector<Position> adjacents;
     Character* character;
     Cell(Position position);
-    Cell(Position position, vector<Position> adjacents);
-    Cell(Position position, vector<Position> adjacents, Character* character);
+    Cell(Position position, std::vector<Position> adjacents);
+    Cell(Position position, std::vector<Position> adjacents, Character* character);
 };
 
 #endif // CELL_H

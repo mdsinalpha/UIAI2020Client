@@ -1,6 +1,7 @@
 #ifndef PORTSPACE_H
 #define PORTSPACE_H
 #include <cell.h>
+#include <map>
 
 class PortSpace : public Cell{
 private:
@@ -8,7 +9,7 @@ private:
     PortSpace(Position position, bool hasSteamer);
 public:
     bool hasSteamer;
-    static map<Position, PortSpace*> instances;
+    static std::map<Position, PortSpace*> instances;
     static void init();
 };
 

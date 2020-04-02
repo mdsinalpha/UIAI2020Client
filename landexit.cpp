@@ -1,5 +1,5 @@
 #include "landexit.h" 
-#define p make_pair
+#define p std::make_pair
 
 LandExit::LandExit() : Cell(p(14, 11)){
     
