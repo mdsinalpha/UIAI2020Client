@@ -7,7 +7,13 @@ class MrsEmmaGrant : public Character{
 private:
     MrsEmmaGrant();
 public:
-    static MrsEmmaGrant instance;
+    static MrsEmmaGrant* instance;
+    static MrsEmmaGrant* getInstance(){
+        if(MrsEmmaGrant::instance)
+            return MrsEmmaGrant::instance;
+        return MrsEmmaGrant::instance = new MrsEmmaGrant();
+    }
+
     void createPark(StreetSpace* cell);
 };
 

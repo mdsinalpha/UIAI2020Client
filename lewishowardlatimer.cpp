@@ -3,6 +3,7 @@
 #include "board.h"
 #define p std::make_pair
 
+
 LewisHowardLatimer::LewisHowardLatimer() : Character(StreetSpace::instances[p(5, 8)], true){
     
 }

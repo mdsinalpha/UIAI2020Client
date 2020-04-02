@@ -7,7 +7,13 @@ class CloudRider : public Character{
 private:
     CloudRider();
 public:
-    static CloudRider instance;
+    static CloudRider* instance;
+    static CloudRider* getInstance(){
+        if(CloudRider::instance)
+            return CloudRider::instance;
+        return CloudRider::instance = new CloudRider();
+    }
+
     void constructBuildingSite(StreetSpace* cell);
 };
 

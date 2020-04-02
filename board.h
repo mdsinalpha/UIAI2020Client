@@ -12,11 +12,11 @@ class Board{
 private:
     Board();
 public:
+    static std::map<Position, Cell*> map;
     static std::vector<StreetSpace*> buildingSites;
     static std::vector<StreetSpace*> metroEntrances;
     static std::vector<StreetSpace*> gasLamps;
     static std::vector<StreetSpace*> parks;
-    static std::map<Position, Cell*> map;
     static void init(){
         
     }

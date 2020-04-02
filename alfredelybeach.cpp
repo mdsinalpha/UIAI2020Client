@@ -3,6 +3,7 @@
 #include "board.h"
 #define p std::make_pair
 
+
 AlfredElyBeach::AlfredElyBeach() : Character(StreetSpace::instances[p(5, 10)], true){
         
 }

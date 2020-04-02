@@ -14,8 +14,4 @@ StreetSpace::StreetSpace(Position position, std::vector<Position> adjacents, Til
     this->strictTile = strictTile;
 }
 
-StreetSpace::StreetSpace(Position position, std::vector<Position> adjacents, Character* character) : Cell(position, adjacents, character){
-    this->strictTile = false;
-}
-
 std::map<Position, StreetSpace*> StreetSpace::instances;

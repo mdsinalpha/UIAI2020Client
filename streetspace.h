@@ -12,7 +12,6 @@ private:
     StreetSpace(Position position, std::vector<Position> adjacents);
     StreetSpace(Position position, std::vector<Position> adjacents, Tile tile);
     StreetSpace(Position position, std::vector<Position> adjacents, Tile tile, bool strictTile);
-    StreetSpace(Position position, std::vector<Position> adjacents, Character* character);
 public:
     Tile tile;
     bool strictTile;
@@ -23,7 +22,9 @@ public:
         int hi[15]{0, 10, 11, 14, 15, 14, 15, 14, 13, 12, 13, 14, 15, 16, 0};
         int ahi[15]{0, 10, 13, 14, 15, 16, 15, 16, 13, 12, 13, 16, 15, 16, 11};
         Position stricts[7]{p(4, 9), p(4, 11), p(7, 8), p(10, 5), p(10, 11), p(11, 6), p(11, 10)}; 
-        
+        Position buildings[6]{p(4, 9), p(4, 11), p(10, 5), p(10, 11), p(11, 6), p(11, 10)};
+        Position metros[3]{p(2, 9), p(11, 4), p(12, 13)};
+        Position lamps[2]{p(3, 10), p(13, 12)};
         
         
     }
