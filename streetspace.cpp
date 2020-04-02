@@ -17,3 +17,7 @@ StreetSpace::StreetSpace(Position position, vector<Position> adjacents, Tile* ti
 StreetSpace::StreetSpace(Position position, vector<Position> adjacents, Character* character) : Cell(position, adjacents, character){
     this->strictTile = false;
 }
+
+void StreetSpace::init(){
+    // TODO
+}

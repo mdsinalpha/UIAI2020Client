@@ -1,11 +1,8 @@
 #ifndef TILE_H
 #define TILE_H
-#include <bits/stdc++.h>
-using namespace std;
 
-class Tile{
-public:
-    Tile();
+enum Tile{
+    BuildingSite, MetroEntrance, GasLamp, Park
 };
 
 #endif // TILE_H

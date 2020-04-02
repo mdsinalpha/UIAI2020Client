@@ -6,7 +6,7 @@ class LibertyIsland : public Cell{
 private:
     LibertyIsland();
 public:
-    const static LibertyIsland instance;
+    static LibertyIsland instance;
 };
 
 #endif // LIBERTYISLAND_H

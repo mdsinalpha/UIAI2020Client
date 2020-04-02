@@ -11,12 +11,14 @@ class Board{
 private:
     Board();
 public:
-    const static Board instance;
+    static Board instance;
+    map<Position, Cell*> board;
     map<Position, Tile> tiles;
-    map<Position, StreetSpace*> streetSpaceMap;
-    map<Position, QuaysideSpace*> quaysideSpaceMap;
-    map<Position, PortSpace*> portSpaceMap;
-    map<Position, Cell*> allMap;
+    vector<StreetSpace*> buildingSites;
+    vector<StreetSpace*> metroEntrances;
+    vector<StreetSpace*> gasLamps;
+    vector<StreetSpace*> parks;
+    
 };
 
 #endif // BOARD_H

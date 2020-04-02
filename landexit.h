@@ -6,7 +6,7 @@ class LandExit : public Cell{
 private:
     LandExit();
 public:
-    const static LandExit instance;
+    static LandExit instance;
 };
 
 #endif // LANDEXIT_H

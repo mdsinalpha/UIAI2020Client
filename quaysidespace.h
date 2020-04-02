@@ -3,8 +3,11 @@
 #include <cell.h>
 
 class QuaysideSpace : public Cell{
-public:
+private:
     QuaysideSpace(Position position, vector<Position> adjacents);
+public:
+    static map<Position, QuaysideSpace*> instances;
+    static void init();
 };
 
 #endif // QUAYSIDESPACE_H
